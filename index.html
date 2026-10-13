@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca Digital UniFECAF - Acesso a livros, artigos e acervo acadêmico moderno, responsivo e acessível.">
+    <title>Biblioteca Digital UniFECAF</title>
+    <!-- Fonte Google Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones Acessíveis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilo CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Link de Acessibilidade (Atalho para navegação por teclado) -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO / NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-image-link" aria-label="Biblioteca Digital UniFECAF - Pág. Inicial">
+                <img src="assets/images/logo.png" alt="Logotipo UniFECAF Biblioteca Digital" class="logo-img">
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" id="menuToggle">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav class="nav" id="mainNav" aria-label="Navegação Principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#destaques" class="nav-link">Destaques</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link btn-primary-small">Acesso Aluno</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal">
+
+        <!-- SEÇÃO HERO / APRESENTAÇÃO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge">Conhecimento Sem Fronteiras</span>
+                    <h1>Sua jornada acadêmica impulsionada pela digitalização</h1>
+                    <p>Acesse milhares de livros digitais, artigos científicos, periódicos e materiais didáticos exclusivos da UniFECAF em qualquer lugar, a qualquer hora.</p>
+                    
+                    <!-- BARRA DE PESQUISA -->
+                    <form class="search-box" role="search" aria-label="Buscar livros no acervo">
+                        <label for="input-search" class="sr-only">Pesquisar por título, autor ou ISBN</label>
+                        <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                        <input type="search" id="input-search" placeholder="Buscar por título, autor, assunto ou ISBN..." required>
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">+15.000</span>
+                            <span class="stat-label">Títulos Digitais</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-label">Acesso Online</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Gratuito p/ Alunos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="assets/images/hero-estudante.jpg" alt="Estudante universitário acessando a biblioteca digital em um laptop" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CATEGORIAS -->
+        <section id="categorias" class="categorias section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Explore por Categorias</h2>
+                    <p>Encontre os materiais específicos das suas áreas de estudo.</p>
+                </div>
+
+                <div class="categories-grid">
+                    <article class="category-card">
+                        <div class="category-icon blue">
+                            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Tecnologia e TI</h3>
+                        <p>Desenvolvimento, IA, Redes, Banco de Dados e Engenharia de Software.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Tecnologia e TI">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon orange">
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Negócios e Gestão</h3>
+                        <p>Administração, Marketing, Finanças, Empreendedorismo e RH.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Negócios e Gestão">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon green">
+                            <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                        </div>
+                        <h3>Saúde e Bem-estar</h3>
+                        <p>Enfermagem, Psicologia, Nutrição, Fisioterapia e Biomedicina.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Saúde e Bem-estar">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon purple">
+                            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+                        </div>
+                        <h3>Direito e Sociedade</h3>
+                        <p>Direito Constitucional, Civil, Penal, Trabalhista e Legislação.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Direito e Sociedade">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon red">
+                            <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+                        </div>
+                        <h3>Engenharias</h3>
+                        <p>Cálculo, Física, Engenharia Civil, Elétrica e Mecânica.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Engenharias">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-icon teal">
+                            <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                        </div>
+                        <h3>Design e Comunicação</h3>
+                        <p>Design Web, UX/UI, Publicidade, Jornalismo e Criação Digital.</p>
+                        <a href="#" class="category-link" aria-label="Explorar categoria Design e Comunicação">Explorar acervo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESTAQUES / LIVROS -->
+        <section id="destaques" class="destaques section-padding bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Principais Destaques do Acervo</h2>
+                    <p>Conheça os livros e publicações mais consultados pelos alunos neste semestre.</p>
+                </div>
+
+                <div class="books-grid">
+                    <!-- Livro 1 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="assets/images/livro-design.jpg" alt="Capa do livro Design Responsivo e UX">
+                            <span class="book-badge">Mais Lido</span>
+                        </div>
+                        <div class="book-info">
+                            <span class="book-category">Tecnologia & Design</span>
+                            <h3 class="book-title">Design Web Responsivo e Experiência do Usuário</h3>
+                            <p class="book-author">Por Prof. Ricardo Silva & Ana Souza</p>
+                            <div class="book-rating" aria-label="Avaliação 4.9 de 5 estrelas">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <button class="btn btn-secondary btn-full">Ler Agora</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 2 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="assets/images/livro-algoritmos.jpg" alt="Capa do livro Algoritmos e Estruturas de Dados">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-category">Computação</span>
+                            <h3 class="book-title">Algoritmos Estruturados e Arquitetura Web</h3>
+                            <p class="book-author">Por Carlos Eduardo Santos</p>
+                            <div class="book-rating" aria-label="Avaliação 4.8 de 5 estrelas">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <button class="btn btn-secondary btn-full">Ler Agora</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 3 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="assets/images/livro-gestao.jpg" alt="Capa do livro Gestão Estratégica">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-category">Administração</span>
+                            <h3 class="book-title">Gestão Estratégica nas Organizações Modernas</h3>
+                            <p class="book-author">Por Dra. Mariana Oliveira</p>
+                            <div class="book-rating" aria-label="Avaliação 4.7 de 5 estrelas">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <button class="btn btn-secondary btn-full">Ler Agora</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 4 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="assets/images/livro-psicologia.jpg" alt="Capa do livro Fundamentos de Psicologia">
+                            <span class="book-badge badge-new">Novo</span>
+                        </div>
+                        <div class="book-info">
+                            <span class="book-category">Psicologia</span>
+                            <h3 class="book-title">Fundamentos de Psicologia Cognitiva Aplicada</h3>
+                            <p class="book-author">Por Roberto Fernandes</p>
+                            <div class="book-rating" aria-label="Avaliação 5.0 de 5 estrelas">
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <button class="btn btn-secondary btn-full">Ler Agora</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SERVIÇOS -->
+        <section id="servicos" class="servicos section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Serviços Oferecidos</h2>
+                    <p>Apoio completo para o seu desenvolvimento acadêmico e de pesquisa.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-box">
+                        <i class="fa-solid fa-book-bookmark service-icon" aria-hidden="true"></i>
+                        <h3>Empréstimo Digital</h3>
+                        <p>Reserve e leia obras completas diretamente no computador, tablet ou smartphone de forma instantânea.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-graduation-cap service-icon" aria-hidden="true"></i>
+                        <h3>Ficha Catalográfica</h3>
+                        <p>Solicite a geração automática de fichas catalográficas estandardizadas para Trabalhos de Conclusão de Curso (TCC).</p>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-users-rectangle service-icon" aria-hidden="true"></i>
+                        <h3>Salas de Estudo Virtual</h3>
+                        <p>Acesse ambientes virtuais colaborativos para grupos de estudo e discussões de projetos acadêmicos.</p>
+                    </div>
+
+                    <div class="service-box">
+                        <i class="fa-solid fa-headset service-icon" aria-hidden="true"></i>
+                        <h3>Suporte à Pesquisa</h3>
+                        <p>Atendimento especializado de bibliotecários para orientação sobre normas ABNT e levantamento bibliográfico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE A BIBLIOTECA -->
+        <section id="sobre" class="sobre section-padding bg-alt">
+            <div class="container sobre-container">
+                <div class="sobre-image">
+                    <img src="assets/images/sobre-biblioteca.jpg" alt="Espaço da biblioteca da UniFECAF moderno e iluminado">
+                </div>
+                <div class="sobre-content">
+                    <span class="badge">Inovação e Acessibilidade</span>
+                    <h2>Sobre a Biblioteca Digital UniFECAF</h2>
+                    <p>A Biblioteca Digital UniFECAF foi concebida para transformar a forma como nossos alunos interagem com o conhecimento. Nosso objetivo é democratizar o acesso à literatura acadêmica de qualidade, unindo inovação tecnológica, acessibilidade e facilidade de navegação.</p>
+                    <p>Com um acervo continuamente atualizado e alinhado aos PPCs (Projetos Pedagógicos de Curso) da instituição, garantimos que cada estudante tenha na palma da mão os melhores recursos para alcançar o sucesso acadêmico e profissional.</p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Acervo atualizado com as principais editoras acadêmicas.</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Plena acessibilidade e conformidade com os padrões WCAG.</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Integração direta com o Ambiente Virtual de Aprendizagem (AVA).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO / SUPORTE -->
+        <section id="contato" class="contato section-padding">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-text">
+                        <h2>Ficou com alguma dúvida ou precisa de suporte?</h2>
+                        <p>Nossa equipe de bibliotecários está pronta para orientar suas pesquisas e tirar dúvidas sobre a plataforma.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="mailto:biblioteca@unifecaf.edu.br" class="btn btn-primary-light"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Falar com a Biblioteca</a>
+                        <a href="#" class="btn btn-outline-light"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> FAQ do Aluno</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo-link" aria-label="UniFECAF - Pág. Inicial">
+                    <img src="assets/images/logo.png" alt="Logotipo UniFECAF" class="footer-logo-img">
+                </a>
+                <p>Centro Universitário UniFECAF — Cultivando mentes, transformando futuros através da educação acessível e inovadora.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook da UniFECAF"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram da UniFECAF"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="LinkedIn da UniFECAF"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube da UniFECAF"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="https://www.unifecaf.com.br" target="_blank" rel="noopener">Portal UniFECAF</a></li>
+                    <li><a href="#">AVA - Ambiente Virtual</a></li>
+                    <li><a href="#">Regulamento da Biblioteca</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Atendimento</h4>
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Av. Vida Nova, 166 - Taboão da Serra - SP</p>
+                <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> biblioteca@unifecaf.edu.br</p>
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> (11) 4788-8888</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 UniFECAF - Biblioteca Digital. Todos os direitos reservados. Projeto da Disciplina Design Web.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS para alternância do menu mobile -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            mainNav.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
